@@ -1,10 +1,10 @@
 import React from 'react';
-import Shop from './Shop';
+import Shops from './Shops';
 
 const Home = () => {
     return (
         <div>
-            <Shop></Shop>
+            <Shops></Shops>
         </div>
     );
 };
