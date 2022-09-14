@@ -8,6 +8,13 @@ const Shops = () => {
         .then(res => res.json())
         .then(data => setProduct(data))
     }, [])
+
+    const handleAddToCart = (selectedProduct) =>{
+        console.log(selectedProduct);
+        console.log('rayhan')
+        
+    }
+
     return (
         <div>
             <h1 className="text-2xl">this product: {products.length} </h1>
@@ -16,6 +23,7 @@ const Shops = () => {
         products.map(product => <Shop
         key={product.id}
         product={product}
+        handleAddToCart={handleAddToCart}
         ></Shop>)
        }
      </div>

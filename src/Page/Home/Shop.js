@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Shop = ({product}) => {
+const Shop = ({product, handleAddToCart}) => {
    
     return (
         <div className="card bg-base-100 shadow-xl">
@@ -13,7 +13,7 @@ const Shop = ({product}) => {
                 <p>Manufacturer: {product.seller}</p>
                 <p>Rating: {product.ratings}</p>
                 <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button onClick={() => handleAddToCart(product)} className="btn btn-primary">Buy Now</button>
                 </div>
             </div>
         </div>
