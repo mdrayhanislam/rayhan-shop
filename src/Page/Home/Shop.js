@@ -13,7 +13,7 @@ const Shop = ({product, handleAddToCart}) => {
                 <p>Manufacturer: {product.seller}</p>
                 <p>Rating: {product.ratings}</p>
                 <div className="card-actions">
-                    <button onClick={() => handleAddToCart(product)} className="btn btn-primary">Buy Now</button>
+                    <button onClick={() => handleAddToCart(product)} className="btn btn-primary">Add cart</button>
                 </div>
             </div>
         </div>
