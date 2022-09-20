@@ -12,13 +12,13 @@ const Shops = () => {
     }, [])
 
     const handleAddToCart = (Product) => {
-        console.log(Product);
+        // console.log(Product);
         const newCart = [...cart, Product];
         setCart(newCart)
     }
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-20'>
             <div>
                 <h1 className="text-2xl">this product: {products.length} </h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20 px-10px'>
