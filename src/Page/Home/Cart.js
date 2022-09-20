@@ -14,8 +14,8 @@ const cart = ( props ) => {
     const tax = parseFloat((total * 0.1).toFixed(2));
     const grandTotal = total + shipping + tax;
     return (
-        <div className="mt-20 ml-20">
-            <h4 className='text-2xl'>Order Summary</h4>
+        <div className="mt-20 ml-20 text-2xl">
+            <h4 className='text-4xl'>Order Summary</h4>
             <p>Select Items: {cart.length}</p>
             <p>Total price: ${total}</p>
             <p>Total Shipping: ${shipping}</p>
